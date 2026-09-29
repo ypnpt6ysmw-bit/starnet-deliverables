@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgNotion" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d11"/>
+      <stop offset="50%" stop-color="#14141c"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+
+    <!-- Indigo/Purple Gradient -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AF52DE"/>
+      <stop offset="100%" stop-color="#5E5CE6"/>
+    </linearGradient>
+
+    <!-- Glass Specular Gradient -->
+    <linearGradient id="glassRimNotion" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- Subtle Grid -->
+    <pattern id="gridNotion" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="720" fill="url(#bgNotion)"/>
+  <rect width="1280" height="720" fill="url(#gridNotion)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="240" cy="200" r="260" fill="#AF52DE" opacity="0.08" filter="url(#purpleGlow)"/>
+  <circle cx="1080" cy="520" r="300" fill="#5E5CE6" opacity="0.08" filter="url(#purpleGlow)"/>
+
+  <!-- Main Glass Container Card -->
+  <rect x="80" y="80" width="1120" height="560" rx="28" fill="rgba(24, 24, 32, 0.72)" stroke="url(#glassRimNotion)" stroke-width="1.2"/>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(140, 140)">
+    <rect width="210" height="38" rx="19" fill="rgba(175, 82, 222, 0.12)" stroke="rgba(175, 82, 222, 0.35)" stroke-width="1"/>
+    <text x="105" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#AF52DE" letter-spacing="0.08em" text-anchor="middle">NOTION WORKSPACE OS</text>
+  </g>
+
+  <!-- 1-Click Duplicate Pill -->
+  <g transform="translate(365, 140)">
+    <rect width="180" height="38" rx="19" fill="rgba(94, 92, 230, 0.12)" stroke="rgba(94, 92, 230, 0.35)" stroke-width="1"/>
+    <text x="90" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#5E5CE6" letter-spacing="0.08em" text-anchor="middle">1-CLICK DUPLICATE</text>
+  </g>
+
+  <!-- Hero Typography -->
+  <text x="140" y="245" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" letter-spacing="-0.025em">
+    Solopreneur Executive
+  </text>
+  <text x="140" y="315" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="52" font-weight="800" fill="url(#purpleGrad)" letter-spacing="-0.025em">
+    Operating System (V2)
+  </text>
+
+  <!-- Subheadline -->
+  <text x="140" y="375" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="20" font-weight="400" fill="rgba(235, 235, 245, 0.75)" letter-spacing="-0.01em">
+    The all-in-one linked database architecture for client CRM, cashflow, and sprint roadmaps.
+  </text>
+
+  <!-- Feature Metric Pills (Horizontal Row) -->
+  <g transform="translate(140, 425)">
+    <!-- Pill 1: Client CRM -->
+    <rect x="0" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="24" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">CLIENT PIPELINES</text>
+    <text x="24" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">5-Stage CRM</text>
+
+    <!-- Pill 2: Cash Flow -->
+    <rect x="230" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="254" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">TREASURY LEDGER</text>
+    <text x="254" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Auto 90% Margin</text>
+
+    <!-- Pill 3: Product Sprints -->
+    <rect x="460" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="484" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">PRODUCT ROADMAP</text>
+    <text x="484" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#AF52DE">Linked Kanban</text>
+  </g>
+
+  <!-- Price & License Footer -->
+  <g transform="translate(140, 560)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">19 zł <tspan font-size="20" font-weight="400" fill="rgba(235, 235, 245, 0.5)">/ $19</tspan></text>
+    <text x="145" y="22" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="16" text-decoration="line-through" fill="rgba(235, 235, 245, 0.35)">$49 Competitor</text>
+    <text x="280" y="22" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="14" font-weight="700" fill="#30D158">SAVE 61% • LIFETIME UPDATES INCLUDED</text>
+  </g>
+
+  <!-- Right Visual Preview: Notion Kanban Card Stack -->
+  <g transform="translate(860, 220)">
+    <rect x="0" y="0" width="280" height="340" rx="20" fill="rgba(18, 18, 26, 0.85)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+
+    <!-- Simulated Notion Header -->
+    <rect x="24" y="24" width="32" height="32" rx="8" fill="rgba(175, 82, 222, 0.2)"/>
+    <text x="34" y="46" font-size="18">⚡</text>
+    <text x="68" y="45" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Executive OS</text>
+
+    <!-- Simulated Notion Card 1 -->
+    <rect x="24" y="80" width="232" height="64" rx="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="40" y="106" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Acme Corp Licensing</text>
+    <rect x="40" y="118" width="60" height="16" rx="4" fill="rgba(48, 209, 88, 0.2)"/>
+    <text x="48" y="130" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10" font-weight="700" fill="#30D158">$4,500</text>
+
+    <!-- Simulated Notion Card 2 -->
+    <rect x="24" y="156" width="232" height="64" rx="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="40" y="182" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Godot Asset Pipeline</text>
+    <rect x="40" y="194" width="70" height="16" rx="4" fill="rgba(175, 82, 222, 0.2)"/>
+    <text x="48" y="206" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10" font-weight="700" fill="#AF52DE">PUBLISHED</text>
+
+    <!-- Simulated Notion Card 3 -->
+    <rect x="24" y="232" width="232" height="64" rx="10" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    <text x="40" y="258" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Monthly Treasury Yield</text>
+    <rect x="40" y="270" width="85" height="16" rx="4" fill="rgba(10, 132, 255, 0.2)"/>
+    <text x="48" y="282" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10" font-weight="700" fill="#0A84FF">90% MARGIN</text>
+  </g>
+</svg>

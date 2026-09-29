@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgChart" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10"/>
+      <stop offset="50%" stop-color="#0E131F"/>
+      <stop offset="100%" stop-color="#06090E"/>
+    </linearGradient>
+
+    <!-- Cyan / Blue Accent Gradient -->
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#63E6E2"/>
+    </linearGradient>
+
+    <!-- Bullish Green Gradient -->
+    <linearGradient id="bullGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#30D158"/>
+      <stop offset="100%" stop-color="#248A3D"/>
+    </linearGradient>
+
+    <!-- Bearish Red Gradient -->
+    <linearGradient id="bearGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF453A"/>
+      <stop offset="100%" stop-color="#B22222"/>
+    </linearGradient>
+
+    <!-- Glass Specular Rim -->
+    <linearGradient id="glassRimChart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Subtle Chart Grid Pattern -->
+    <pattern id="chartGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="32" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bgChart)"/>
+  <rect width="1280" height="720" fill="url(#chartGrid)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="220" cy="180" r="300" fill="#0A84FF" opacity="0.10" filter="url(#neonGlow)"/>
+  <circle cx="1080" cy="520" r="320" fill="#63E6E2" opacity="0.08" filter="url(#neonGlow)"/>
+
+  <!-- Outer Glass Frame -->
+  <rect x="70" y="70" width="1140" height="580" rx="28" fill="rgba(14, 20, 32, 0.75)" stroke="url(#glassRimChart)" stroke-width="1.2"/>
+
+  <!-- Category Pills -->
+  <g transform="translate(130, 130)">
+    <rect width="240" height="38" rx="19" fill="rgba(10, 132, 255, 0.15)" stroke="rgba(10, 132, 255, 0.4)" stroke-width="1"/>
+    <text x="120" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#0A84FF" letter-spacing="0.08em" text-anchor="middle">TRADINGVIEW • PINESCRIPT V5</text>
+  </g>
+  <g transform="translate(390, 130)">
+    <rect width="210" height="38" rx="19" fill="rgba(99, 230, 226, 0.15)" stroke="rgba(99, 230, 226, 0.4)" stroke-width="1"/>
+    <text x="105" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#63E6E2" letter-spacing="0.08em" text-anchor="middle">INSTITUTIONAL SUITE</text>
+  </g>
+
+  <!-- Title & Copy -->
+  <text x="130" y="235" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="48" font-weight="800" fill="#FFFFFF" letter-spacing="-0.025em">
+    Order Flow Imbalance &amp;
+  </text>
+  <text x="130" y="295" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="48" font-weight="800" fill="url(#cyanBlueGrad)" letter-spacing="-0.025em">
+    Volume Profile Suite
+  </text>
+  <text x="130" y="340" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="17" font-weight="400" fill="rgba(235, 235, 245, 0.65)" letter-spacing="-0.01em">
+    Mathematical volume absorption indicator with strict zero repainting and real-time alerts.
+  </text>
+
+  <!-- Feature Metric Badges -->
+  <g transform="translate(130, 385)">
+    <rect width="180" height="64" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="rgba(235, 235, 245, 0.5)" text-anchor="middle">SIGNAL FIDELITY</text>
+    <text x="90" y="49" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="18" font-weight="700" fill="#30D158" text-anchor="middle">Zero Repaint</text>
+  </g>
+  <g transform="translate(325, 385)">
+    <rect width="180" height="64" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="rgba(235, 235, 245, 0.5)" text-anchor="middle">ALERT SYSTEM</text>
+    <text x="90" y="49" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="18" font-weight="700" fill="#63E6E2" text-anchor="middle">Native Webhooks</text>
+  </g>
+  <g transform="translate(520, 385)">
+    <rect width="180" height="64" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="90" y="26" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="rgba(235, 235, 245, 0.5)" text-anchor="middle">COMPATIBILITY</text>
+    <text x="90" y="49" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="18" font-weight="700" fill="#0A84FF" text-anchor="middle">BTC • ETH • SOL</text>
+  </g>
+
+  <!-- Interactive Candlestick Graphic Representation -->
+  <g transform="translate(740, 160)">
+    <!-- Glass Chart Canvas -->
+    <rect width="420" height="380" rx="20" fill="rgba(9, 14, 22, 0.85)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    
+    <!-- Volume Profile Bars on left side of chart -->
+    <rect x="15" y="80" width="75" height="12" rx="4" fill="rgba(10, 132, 255, 0.25)"/>
+    <rect x="15" y="105" width="120" height="12" rx="4" fill="rgba(10, 132, 255, 0.35)"/>
+    <rect x="15" y="130" width="180" height="12" rx="4" fill="rgba(99, 230, 226, 0.45)"/> <!-- POC Point of Control -->
+    <rect x="15" y="155" width="140" height="12" rx="4" fill="rgba(10, 132, 255, 0.30)"/>
+    <rect x="15" y="180" width="90" height="12" rx="4" fill="rgba(10, 132, 255, 0.20)"/>
+    <rect x="15" y="205" width="60" height="12" rx="4" fill="rgba(10, 132, 255, 0.15)"/>
+    
+    <!-- Candlestick 1: Bullish -->
+    <line x1="200" y1="210" x2="200" y2="280" stroke="#30D158" stroke-width="2"/>
+    <rect x="190" y="230" width="20" height="40" rx="4" fill="url(#bullGrad)"/>
+
+    <!-- Candlestick 2: Bullish Impulsive -->
+    <line x1="240" y1="170" x2="240" y2="250" stroke="#30D158" stroke-width="2"/>
+    <rect x="230" y="190" width="20" height="50" rx="4" fill="url(#bullGrad)"/>
+
+    <!-- Candlestick 3: Consolidation Bearish -->
+    <line x1="280" y1="160" x2="280" y2="220" stroke="#FF453A" stroke-width="2"/>
+    <rect x="270" y="180" width="20" height="25" rx="4" fill="url(#bearGrad)"/>
+
+    <!-- Candlestick 4: Bullish Imbalance Breakout -->
+    <line x1="320" y1="110" x2="320" y2="190" stroke="#30D158" stroke-width="2"/>
+    <rect x="310" y="125" width="20" height="60" rx="4" fill="url(#bullGrad)"/>
+
+    <!-- Buy Signal Marker -->
+    <polygon points="320,205 312,220 328,220" fill="#30D158"/>
+    <rect x="275" y="228" width="90" height="22" rx="6" fill="rgba(48, 209, 88, 0.2)" stroke="#30D158" stroke-width="1"/>
+    <text x="320" y="243" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="700" fill="#30D158" text-anchor="middle">BUY ABSORPTION</text>
+
+    <!-- Candlestick 5: Expansion -->
+    <line x1="360" y1="80" x2="360" y2="150" stroke="#30D158" stroke-width="2"/>
+    <rect x="350" y="90" width="20" height="50" rx="4" fill="url(#bullGrad)"/>
+
+    <!-- Price Header -->
+    <text x="25" y="45" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">BTC / USD</text>
+    <text x="130" y="45" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="16" font-weight="600" fill="#30D158">+4.82%</text>
+    <text x="25" y="340" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="500" fill="rgba(235, 235, 245, 0.4)">CHARTIST ORDER FLOW ENGINE v5.2 • LIVE TICK FEED</text>
+  </g>
+
+  <!-- Bottom Pricing & StarNet Watermark -->
+  <g transform="translate(130, 485)">
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">39 zł</text>
+    <text x="105" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="18" font-weight="500" fill="rgba(235, 235, 245, 0.4)" text-decoration="line-through">129 zł</text>
+    <rect x="175" y="10" width="95" height="28" rx="8" fill="rgba(48, 209, 88, 0.15)" stroke="rgba(48, 209, 88, 0.4)" stroke-width="1"/>
+    <text x="222" y="29" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="700" fill="#30D158" text-anchor="middle">SAVE 70%</text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="14" font-weight="500" fill="rgba(235, 235, 245, 0.5)">
+      Instant PineScript v5 source delivery + Webhook automation guide.
+    </text>
+  </g>
+
+  <g transform="translate(970, 580)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="600" fill="rgba(255, 255, 255, 0.35)" letter-spacing="0.05em">STARNET DIGITAL LABS</text>
+  </g>
+</svg>

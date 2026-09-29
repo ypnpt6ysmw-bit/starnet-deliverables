@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgQuant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c0a"/>
+      <stop offset="50%" stop-color="#0e1713"/>
+      <stop offset="100%" stop-color="#050a08"/>
+    </linearGradient>
+
+    <!-- Green / Mint Accent Gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30D158"/>
+      <stop offset="100%" stop-color="#63E6E2"/>
+    </linearGradient>
+
+    <!-- Glass Specular Gradient -->
+    <linearGradient id="glassRimQuant" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- Subtle Grid -->
+    <pattern id="gridQuant" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="720" fill="url(#bgQuant)"/>
+  <rect width="1280" height="720" fill="url(#gridQuant)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="280" cy="180" r="280" fill="#30D158" opacity="0.08" filter="url(#greenGlow)"/>
+  <circle cx="1060" cy="540" r="300" fill="#63E6E2" opacity="0.07" filter="url(#greenGlow)"/>
+
+  <!-- Main Glass Container Card -->
+  <rect x="80" y="80" width="1120" height="560" rx="28" fill="rgba(16, 26, 21, 0.72)" stroke="url(#glassRimQuant)" stroke-width="1.2"/>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(140, 140)">
+    <rect width="230" height="38" rx="19" fill="rgba(48, 209, 88, 0.12)" stroke="rgba(48, 209, 88, 0.35)" stroke-width="1"/>
+    <text x="115" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#30D158" letter-spacing="0.08em" text-anchor="middle">TRADINGVIEW • PINESCRIPT V5</text>
+  </g>
+
+  <!-- Python Bot Pill -->
+  <g transform="translate(385, 140)">
+    <rect width="180" height="38" rx="19" fill="rgba(99, 230, 226, 0.12)" stroke="rgba(99, 230, 226, 0.35)" stroke-width="1"/>
+    <text x="90" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="700" fill="#63E6E2" letter-spacing="0.08em" text-anchor="middle">PYTHON DCA ENGINE</text>
+  </g>
+
+  <!-- Hero Typography -->
+  <text x="140" y="245" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" letter-spacing="-0.025em">
+    Algorithmic BTC &amp; SOL
+  </text>
+  <text x="140" y="315" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="52" font-weight="800" fill="url(#greenGrad)" letter-spacing="-0.025em">
+    Volatility Momentum Model
+  </text>
+
+  <!-- Subheadline -->
+  <text x="140" y="375" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="20" font-weight="400" fill="rgba(235, 235, 245, 0.75)" letter-spacing="-0.01em">
+    Risk-adjusted inverse-ATR capital allocation with hard circuit breakers and dynamic entry sizing.
+  </text>
+
+  <!-- Feature Metric Pills (Horizontal Row) -->
+  <g transform="translate(140, 425)">
+    <!-- Pill 1: Dynamic Multiplier -->
+    <rect x="0" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="24" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">DCA MULTIPLIER</text>
+    <text x="24" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">0.40x – 1.65x</text>
+
+    <!-- Pill 2: Risk Bound -->
+    <rect x="230" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="254" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">TRADE CAP</text>
+    <text x="254" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">1.5% Equity</text>
+
+    <!-- Pill 3: Circuit Breaker -->
+    <rect x="460" y="0" width="210" height="72" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    <text x="484" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="rgba(235, 235, 245, 0.50)">DRAWDOWN HALT</text>
+    <text x="484" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="20" font-weight="700" fill="#30D158">2.5% Auto Stop</text>
+  </g>
+
+  <!-- Price & License Footer -->
+  <g transform="translate(140, 560)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">29 zł <tspan font-size="20" font-weight="400" fill="rgba(235, 235, 245, 0.5)">/ $29</tspan></text>
+    <text x="145" y="22" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="16" text-decoration="line-through" fill="rgba(235, 235, 245, 0.35)">$79 Competitor</text>
+    <text x="280" y="22" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="14" font-weight="700" fill="#30D158">SAVE 63% • SOURCE CODE INCLUDED</text>
+  </g>
+
+  <!-- Right Visual Preview: Interactive Chart & Telemetry Box -->
+  <g transform="translate(860, 220)">
+    <rect x="0" y="0" width="280" height="340" rx="20" fill="rgba(10, 18, 14, 0.85)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+
+    <!-- Simulated Chart Line -->
+    <path d="M 24 240 Q 80 180, 140 220 T 256 120" fill="none" stroke="#30D158" stroke-width="3" filter="url(#greenGlow)"/>
+    <path d="M 24 240 Q 80 180, 140 220 T 256 120" fill="none" stroke="#30D158" stroke-width="2.5"/>
+
+    <!-- Buy Signal Marker -->
+    <circle cx="140" cy="220" r="7" fill="#30D158"/>
+    <rect x="110" y="180" width="60" height="24" rx="6" fill="rgba(48, 209, 88, 0.3)" stroke="#30D158" stroke-width="1"/>
+    <text x="140" y="196" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">BUY 1.65x</text>
+
+    <!-- Telemetry Table in Right Card -->
+    <g transform="translate(24, 24)">
+      <rect width="232" height="96" rx="10" fill="rgba(0, 0, 0, 0.4)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+      <text x="16" y="28" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="rgba(255, 255, 255, 0.6)">BTC Volatility ATR: 1250</text>
+      <text x="16" y="52" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="rgba(255, 255, 255, 0.6)">RSI 14 Period:     31.4</text>
+      <text x="16" y="76" font-family="'SF Mono', Menlo, monospace" font-size="11" font-weight="700" fill="#30D158">DCA State: ACTIVE ACCUM</text>
+    </g>
+  </g>
+</svg>
